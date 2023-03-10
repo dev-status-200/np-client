@@ -11,7 +11,7 @@ function NavbarComp() {
       <Row>
         <Col md={2} className="mx-5">
         <Image
-            src="/img/logo.png"
+            src="/img/logo.PNG"
             alt="Next.js Logo"
             width={250}
             height={85}
@@ -20,7 +20,7 @@ function NavbarComp() {
         </Col>
         <Col md={2}>
         <Image
-              src="/img/header-slogan.png"
+              src="/img/header-slogan.PNG"
               alt="Next.js Logo"
               width={200}
               height={105}
