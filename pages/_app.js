@@ -5,9 +5,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function App({ Component, pageProps }) {
   return (
-    <>
-      <Header/>
-      <Component {...pageProps} />
-    </>
+        <div className='text-center' style={{marginTop:"25%"}}> Unexpected Server Error Occured </div>
+//     <>
+//       <Header/>
+//       <Component {...pageProps} />
+//     </>
   )
 }
