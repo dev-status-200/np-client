@@ -6,6 +6,7 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
+
     .hero2{
         background: url("../public/img/hero-1.png");
         height: 56vh;
@@ -13,7 +14,56 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
+
     .hero-layouts{
         padding-top: 15%;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .tour-img{
+        border-radius: 25px;
+    }
+
+    .desc{
+        border-radius: 20px!important;
+        background-color: rgb(255, 255, 255)!important;
+        padding: 20px;
+        position: relative;
+        z-index: 2;
+        bottom: 210px;
+        width: 80%;
+        left: 10%;
+        right: 10%;
+    }
+    .rating{
+        background-color: rgb(9, 131, 192);
+        position: relative;
+        text-align: center;
+        width: 70%;
+        z-index: 2;
+        top: -30px;
+        left: 70px;
+        border-radius: 25px;
     }
 }

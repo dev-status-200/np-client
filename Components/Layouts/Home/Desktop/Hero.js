@@ -8,7 +8,7 @@ import { Pagination } from "swiper";
 import { Row, Col } from 'react-bootstrap';
 import Link from "next/link";
 
-export default function Desktop() {
+export default function Hero() {
   return (
     <>
       <Swiper

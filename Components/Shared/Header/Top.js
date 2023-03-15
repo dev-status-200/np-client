@@ -3,6 +3,7 @@ import { BiPhoneCall, BiMailSend } from "react-icons/bi";
 import { AiFillInstagram, AiFillLinkedin, AiOutlineUser } from "react-icons/ai";
 import { FaFacebookSquare } from "react-icons/fa";
 import { Row, Col } from 'react-bootstrap';
+import Router from 'next/router';
 
 const Top = () => {
   return (
@@ -47,7 +48,7 @@ const Top = () => {
           <span>
             <AiOutlineUser className='fs-16 mx-2 pr b2' />
           </span>
-          <span>
+          <span className="cur" onClick={()=>Router.push("/login")}>
             Login
           </span>
         </Col>

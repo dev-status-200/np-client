@@ -58,7 +58,7 @@ function NavbarComp() {
             <Link href={"/home"} className="text-dec-none navbar-link">
               Cars
             </Link>
-            <Link href={"/home"} className="text-dec-none global-blue-btn">
+            <Link href={"/home"} className="text-dec-none global-blue-btn fs-13">
               CREATE YOUR OWN TRIP
             </Link>
           </div>

@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import Head from 'next/head';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main >
-        <div >
+        {/* <div >
           <Image
             src="/next.svg"
             alt="Next.js Logo"
@@ -28,7 +28,7 @@ export default function Home() {
               priority
             />
           </div>
-        </div>
+        </div> */}
       </main>
     </>
   )

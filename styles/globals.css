@@ -18,8 +18,9 @@ a {
 
 .white-txt{ color: white!important; }
 .grey-txt{ color: grey!important; }
+.jet-black-txt{ color: #3C3C3B!important; }
 .silver-txt{ color: silver!important; }
-.blue-txt{ color: rgb(45, 148, 176)!important; }
+.blue-txt{ color: rgb(17, 159, 242)!important; }
 
 .fs-12 { font-size: 12px!important; }
 .fs-13 { font-size: 13px!important; }
@@ -77,12 +78,19 @@ a {
   color: white !important;
   padding: 5px 20px 5px 20px;
   border-radius: 25px;
-  font-size: 13px!important;
   margin: 0px 10px 0px 10px;
+  border: none;
 }
 .global-blue-btn:hover{
   transition-duration: 200ms;
   background-color: rgb(11, 94, 142) !important;
   padding: 5px 30px 5px 30px;
   margin: 0px 0px 0px 0px;
+}
+.tag{
+  letter-spacing: 5px;
+}
+
+.cur{
+  cursor: pointer;
 }

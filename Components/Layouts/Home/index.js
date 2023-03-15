@@ -1,5 +1,5 @@
 import React from 'react'
-import Desktop from './Desktop'
+import Desktop from './Desktop/'
 
 const Home = () => {
   return (
