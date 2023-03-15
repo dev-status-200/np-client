@@ -5,6 +5,7 @@ import '@/styles/main.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Router, { useRouter } from 'next/router';
 import PortalLayout from '@/Components/Shared/PortalLayout';
+import Loader from '@/Components/Shared/Loader';
 
 export default function App({ Component, pageProps }) {
 
