@@ -1,16 +1,19 @@
 import React from 'react';
 import Featured from './Featured';
-import Hero from './Hero';
 import { Container } from 'react-bootstrap';
+import dynamic from 'next/dynamic';
+const DynamicHero = dynamic(() => import('./Hero'), {
+  loading: () => <p>Loading...</p>,
+})
 
 const Desktop = () => {
   return (
-    <div>
-      <Hero/>
+    <>
+      <DynamicHero/>
       <Container>
         <Featured/>
       </Container>
-    </div>
+    </>
   )
 }
 

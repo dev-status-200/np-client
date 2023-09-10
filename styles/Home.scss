@@ -1,7 +1,7 @@
 .home-styles{
     .hero1{
         background: url("../public/img/hero-2.png");
-        height: 56vh;
+        height: 76vh;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -9,14 +9,14 @@
 
     .hero2{
         background: url("../public/img/hero-1.png");
-        height: 56vh;
+        height: 76vh;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
 
     .hero-layouts{
-        padding-top: 15%;
+        padding-top: 5%;
     }
 
     .swiper {
@@ -43,9 +43,11 @@
 
     .tour-img{
         border-radius: 25px;
+        cursor: pointer;
     }
 
     .desc{
+        cursor: pointer;
         border-radius: 20px!important;
         background-color: rgb(255, 255, 255)!important;
         padding: 20px;

@@ -42,7 +42,7 @@ function NavbarComp() {
               BROUCHERS
             </Link>
           </div>
-          <div className='text-end' style={{marginRight:25}}>
+          <div className='text-end' style={{marginRight:"1%"}}>
             <Link href={"/home"} className="text-dec-none navbar-link">
               Home
             </Link>
