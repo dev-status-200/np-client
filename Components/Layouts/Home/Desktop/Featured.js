@@ -5,6 +5,8 @@ import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
 import TripCardMedium from "@/Components/Shared/TripCardMedium";
 import axios from "axios";
+import { Spinner } from "react-bootstrap";
+import { delay } from "@/functions/delay";
 
 export default function App() {
 
@@ -15,11 +17,10 @@ export default function App() {
 
   const getTourData = () => {
     axios.get(`${process.env.NEXT_PUBLIC_API_URL}/packages/mostPopulartrips`)
-    .then((x)=>{
-      console.log(x.data.result)
+    .then(async(x)=>{
+      await delay(3000)
       setPopularTrips(x.data.result)
     })
-    console.log(`${process.env.NEXT_PUBLIC_API_URL}/packages/mostPopulartrips`)
   }
 
   return (
@@ -31,6 +32,8 @@ export default function App() {
         Lorem Ipsum is simply dummy text of the printing and typesetting industry, typesetting industry, loremimply dummy trimming the printing and industry, typesetting industry.
       </p>
     </div>
+    {popularTrips.length>0 &&
+    <>
     <Swiper
       slidesPerView={3}
       spaceBetween={30}
@@ -52,6 +55,11 @@ export default function App() {
     <div className="text-center" style={{position:'relative', position:'relative', bottom:120, zIndex:1}}>
       <button className="global-blue-btn px-5">VIEW MORE</button>
     </div>
+    </>}
+    {popularTrips.length==0 && <div className="text-center mb-5">
+      <Spinner  animation="border" variant="info"  />
+      <p>Loading Trips</p>
+    </div>}
   </div>
   );
 }
