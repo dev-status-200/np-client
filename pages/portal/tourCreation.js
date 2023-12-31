@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+import TourCreation from '@/Components/Portal/TourCreation';
 
 const tourCreation = () => {
   return (
-    <div>
-      tourCreation
-    </div>
+    <>
+      <TourCreation/>
+    </>
   )
 }
 

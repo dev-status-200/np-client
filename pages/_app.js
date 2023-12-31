@@ -23,7 +23,7 @@ export default function App({ Component, pageProps }) {
         <Component {...pageProps} />
       </>
     }
-    { (
+    {(
       router.pathname =='/portal/dashboard' ||
       router.pathname =='/portal/tourCreation' 
     ) &&
